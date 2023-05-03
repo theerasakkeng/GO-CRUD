@@ -23,6 +23,10 @@ type Customer_Req struct {
 	Zip_Code   string  `json:"zip_code"`
 }
 
+type Tabler interface {
+	TableName() string
+}
+
 func (Customer_Req) TableName() string {
 	return "sales.customers"
 }
