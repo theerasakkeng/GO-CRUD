@@ -13,6 +13,7 @@ func InitRoute() {
 		CustomerRoute.GET("/getcustomers", customer.GetCustomerList)
 		CustomerRoute.GET("/getcustomerdetail", customer.GetCustomerDetail)
 		CustomerRoute.POST("/postcustomer", customer.PostCustomer)
-
+		CustomerRoute.PUT("/updatecustomer", customer.UpdateCustomer)
+		CustomerRoute.DELETE("/deletecustomer", customer.DeleteCustomer)
 	}
 }
