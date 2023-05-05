@@ -13,10 +13,10 @@ type Customer_Response struct {
 }
 
 type Customer_Request struct {
-	First_Name string  `json:"first_name"`
-	Last_Name  string  `json:"last_name"`
+	First_Name string  `json:"first_name" binding:"required"`
+	Last_Name  string  `json:"last_name" binding:"required"`
 	Phone      *string `json:"phone"`
-	Email      string  `json:"email"`
+	Email      string  `json:"email" binding:"required"`
 	Street     string  `json:"street"`
 	City       string  `json:"city"`
 	State      string  `json:"state"`
